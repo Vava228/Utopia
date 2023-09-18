@@ -48,7 +48,11 @@ public class ExampleMod
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
+<<<<<<< HEAD
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+=======
+        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+>>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
