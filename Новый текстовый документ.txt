@@ -1,0 +1,3 @@
+modId="mod_mine" #mandatory
+version="1.16-1.0.0" #mandatory
+displayName="Mod Mine" #mandatory
