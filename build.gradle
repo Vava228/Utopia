@@ -1,19 +1,10 @@
 buildscript {
     repositories {
-<<<<<<< HEAD
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
-=======
         maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -25,22 +16,11 @@ version = '1.0'
 group = 'com.yourname.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'modid'
 
-<<<<<<< HEAD
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
-=======
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
-<<<<<<< HEAD
-    // snapshot_YYYYMMDD   Snapshot are built nightly.
-    // stable_#            Stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not always work.
-    // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'snapshot', version: '20200514-1.16'
-=======
     // Channel:   Version:
     // snapshot   YYYYMMDD   Snapshot are built nightly.
     // stable     #          Stables are built at the discretion of the MCP team.
@@ -52,7 +32,6 @@ minecraft {
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
     mappings channel: 'official', version: '1.16.5'
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -64,11 +43,6 @@ minecraft {
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
-<<<<<<< HEAD
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-=======
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -78,7 +52,6 @@ minecraft {
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
             property 'forge.logging.console.level', 'debug'
 
             mods {
@@ -92,11 +65,6 @@ minecraft {
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
-<<<<<<< HEAD
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-=======
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -106,7 +74,6 @@ minecraft {
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
             property 'forge.logging.console.level', 'debug'
 
             mods {
@@ -120,14 +87,6 @@ minecraft {
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
-<<<<<<< HEAD
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
-=======
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -141,7 +100,6 @@ minecraft {
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
 
             mods {
                 examplemod {
@@ -152,21 +110,14 @@ minecraft {
     }
 }
 
-<<<<<<< HEAD
-=======
 // Include resources generated by data generators.
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-<<<<<<< HEAD
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.108'
-=======
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
@@ -220,8 +171,4 @@ publishing {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f5e87cd24645357a650f6c7b1d6f57fb4b651235
