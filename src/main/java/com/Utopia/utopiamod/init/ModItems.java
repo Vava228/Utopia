@@ -9,6 +9,5 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
     public static final DeferredRegister<Item> Items = DeferredRegister.create(ForgeRegistries.ITEMS, Utopia.MOD_ID);
-
     public static final RegistryObject<Item> CITRINE = Items.register("citrine", MaterialItem::new);
 }
