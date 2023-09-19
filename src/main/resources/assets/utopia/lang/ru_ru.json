@@ -1,6 +1,6 @@
 {
   "itemGroup.mod_materials_tab": "Утопия",
   "item.utopia.citrine": "Цитрин",
-  "item.utopia.citrine_ore": "Цитриновая руда",
-  "item.utopia.citrine_block": "Цитриновый блок"
+  "block.utopia.citrine_ore": "Цитриновая руда",
+  "block.utopia.citrine_block": "Цитриновый блок"
 }
