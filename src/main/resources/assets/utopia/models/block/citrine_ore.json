@@ -1,0 +1,14 @@
+{
+  "parent":"block/cube_all",
+  "textures": {
+
+    "down": "utopia:block/citrine_ore",
+    "up": "utopia:block/citrine_block",
+    "east": "utopia:block/citrine_ore",
+    "west": "utopia:block/citrine_ore",
+    "north": "utopia:block/citrine_ore",
+    "south": "utopia:block/citrine_ore"
+
+  }
+
+}

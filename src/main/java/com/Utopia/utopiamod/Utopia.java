@@ -1,6 +1,7 @@
 package com.Utopia.utopiamod;
 
 
+import com.Utopia.utopiamod.block.ModBlocks;
 import com.Utopia.utopiamod.init.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,7 @@ public class Utopia
         eventBus.addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.Items.register(eventBus);
+        ModBlocks.register(eventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event)
