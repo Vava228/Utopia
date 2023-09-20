@@ -32,8 +32,6 @@ public class ModBlocks
 {
     public  static  final DeferredRegister<Block> BLOCK =
          DeferredRegister.create(ForgeRegistries.BLOCKS, Utopia.MOD_ID);
-
-
     public  static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new Block(AbstractBlock.Properties.of(HEAVY_METAL)
                     .harvestLevel(1).harvestTool(ToolType.PICKAXE)
