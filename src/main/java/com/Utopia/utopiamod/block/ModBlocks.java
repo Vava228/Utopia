@@ -44,6 +44,30 @@ public class ModBlocks
             .harvestTool(ToolType.PICKAXE)
             .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
+    public  static final RegistryObject<Block> DIRT =registerBlock("dirt",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(1)
+                    .harvestTool(ToolType.SHOVEL)
+                    .sound(SoundType.SAND).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> ERODED_METAL =registerBlock("eroded_metal",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> GRASS_BLOCK =registerBlock("grass_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(1)
+                    .harvestTool(ToolType.SHOVEL)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> START_GRASS_BLOCK =registerBlock("start_grass_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(1)
+                    .harvestTool(ToolType.SHOVEL)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> RED_BRICK_BLOCK =registerBlock("red_brick_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
     private static RegistryObject<Block> registerBlock(String name, Supplier<Block> block){
         RegistryObject<Block> toReturn = BLOCK.register(name,block);
