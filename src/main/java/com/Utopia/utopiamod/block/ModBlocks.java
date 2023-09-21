@@ -53,12 +53,12 @@ public class ModBlocks
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
     public  static final RegistryObject<Block> GRASS_BLOCK =registerBlock("grass_block",
-            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(1)
+            () -> new Block(AbstractBlock.Properties.of(GRASS).harvestLevel(1)
                     .harvestTool(ToolType.SHOVEL)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
     public  static final RegistryObject<Block> START_GRASS_BLOCK =registerBlock("start_grass_block",
-            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(1)
+            () -> new Block(AbstractBlock.Properties.of(GRASS).harvestLevel(1)
                     .harvestTool(ToolType.SHOVEL)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
