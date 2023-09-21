@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures":
+  {
+    "layer0": "utopia:items/black_beton_block"
+  }
+}
+

@@ -4,10 +4,7 @@ package com.Utopia.utopiamod.block;
 import com.Utopia.utopiamod.Utopia;
 import com.Utopia.utopiamod.init.ModItems;
 import com.Utopia.utopiamod.utils.ModItemGroups;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -64,6 +61,24 @@ public class ModBlocks
 
     public  static final RegistryObject<Block> RED_BRICK_BLOCK =registerBlock("red_brick_block",
             () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> BLACK_BETON_BLOCK =registerBlock("black_beton_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+    public  static final RegistryObject<Block> WHITE_BRICK_BLOCK =registerBlock("white_brick_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+    public  static final RegistryObject<Block> WHITE_BETON_block =registerBlock("white_beton_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> WHITE_BETON_SLAB =registerBlock("white_beton_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
