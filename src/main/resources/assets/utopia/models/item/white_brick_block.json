@@ -1,0 +1,8 @@
+{
+  "parent":"block/cube_all",
+  "textures": {
+
+    "all": "utopia:block/white_brick_block"
+  }
+
+}
