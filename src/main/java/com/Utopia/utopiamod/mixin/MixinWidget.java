@@ -8,6 +8,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 @Mixin(Widget.class)
 public class MixinWidget {
 
-    @Inject(at = @At(value = "HEAD"), )
+    //@Inject(at = @At(value = "HEAD"), method = "render")
 
 }
