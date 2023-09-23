@@ -4,26 +4,21 @@ package com.Utopia.utopiamod.block;
 import com.Utopia.utopiamod.Utopia;
 import com.Utopia.utopiamod.init.ModItems;
 import com.Utopia.utopiamod.utils.ModItemGroups;
-import net.minecraft.block.*;
-import net.minecraft.inventory.IInventory;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.SoundType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
-import  net.minecraftforge.registries.DeferredRegister;
-import  net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import static net.minecraft.block.material.Material.*;
-import net.minecraft.loot.LootContext;
-import net.minecraft.loot.LootTable;
-import net.minecraft.loot.LootParameterSets;
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.util.NonNullList;
 
-import java.util.List;
-import java.util.Collections;
 import java.util.function.Supplier;
+
+import static net.minecraft.block.material.Material.*;
 
 public class ModBlocks
 {

@@ -7,5 +7,5 @@ import org.spongepowered.asm.mixin.Mixin;
 @Mixin(Widget.class)
 public class MixinWidget
 {
-    //@Inject(at = @At(value = "HEAD"), method = "")
+    //Inject(at = @At(value = "HEAD"), method = "")
 }
