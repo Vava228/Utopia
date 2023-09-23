@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures":
+  {
+    "all": "utopia:block/eroded_metal_two_block"
+  }
+}
+

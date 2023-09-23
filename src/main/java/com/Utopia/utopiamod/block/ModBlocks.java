@@ -72,7 +72,7 @@ public class ModBlocks
             () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
-    public  static final RegistryObject<Block> WHITE_BETON_block =registerBlock("white_beton_block",
+    public  static final RegistryObject<Block> WHITE_BETON_BLOCK =registerBlock("white_beton_block",
             () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
@@ -82,12 +82,61 @@ public class ModBlocks
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
+    public  static final RegistryObject<Block> BLUE_CONTAINER_BLOCK =registerBlock("blue_container_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> BLUE_CONTAINER_DEAD_BLOCK =registerBlock("blue_container_dead_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> BLUE_CONTAINER_SCRATCH_BLOCK =registerBlock("blue_container_scratch_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> CRATE_BLOCK =registerBlock("crate_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> GREEN_CRATE_BLOCK =registerBlock("green_crate_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> ERODED_METAL_TWO_BLOCK =registerBlock("eroded_metal_two_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.SHOVEL)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> RED_CONTAINER_BLOCK =registerBlock("red_container_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> RED_CONTAINER_DEAD_BLOCK =registerBlock("red_container_dead_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> RED_CONTAINER_SCRATCH_BLOCK =registerBlock("red_container_scratch_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
+    public  static final RegistryObject<Block> THETRUBA_BLOCK =registerBlock("thetruba_block",
+            () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
     private static RegistryObject<Block> registerBlock(String name, Supplier<Block> block){
         RegistryObject<Block> toReturn = BLOCK.register(name,block);
         registerBlockItem(name, toReturn);
         return  toReturn;
     }
-
     private static void  registerBlockItem(String  name, RegistryObject<Block> block){
         ModItems.Items.register(name, ()-> new BlockItem(block.get(),
                 new Item.Properties().tab(ModItemGroups.MOD_MATERIALS_TAB)));

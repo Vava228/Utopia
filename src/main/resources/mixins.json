@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.Utopia.utopiamod.mixin",
+  "package": "com.UtopiaMixin.mixins",
   "compatibilityLevel": "JAVA_8",
   "client": [
     "MixinWidget"
