@@ -77,6 +77,7 @@ public class ModBlocks
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
 
+
     public  static final RegistryObject<Block> BLUE_CONTAINER_BLOCK =registerBlock("blue_container_block",
             () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
@@ -126,6 +127,7 @@ public class ModBlocks
             () -> new Block(AbstractBlock.Properties.of(GLASS).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.BONE_BLOCK).strength(6,10).requiresCorrectToolForDrops()));
+
 
     private static RegistryObject<Block> registerBlock(String name, Supplier<Block> block){
         RegistryObject<Block> toReturn = BLOCK.register(name,block);
