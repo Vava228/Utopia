@@ -12,11 +12,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.stream.Collectors;
-
 @Mod("utopia")
 public class Utopia
 {
+    // CTRL + B => Move to native file;
     public static final String MOD_ID = "utopia";
 
     private static final Logger LOGGER = LogManager.getLogger();
