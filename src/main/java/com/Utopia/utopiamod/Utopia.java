@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
-@Mod("utopia")
+@Mod(Utopia.MOD_ID)
 public class Utopia
 {
     public static final String MOD_ID = "utopia";
