@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures":
-  {
-    "all": "utopia:block/green_crate_block"
-  }
-}
-

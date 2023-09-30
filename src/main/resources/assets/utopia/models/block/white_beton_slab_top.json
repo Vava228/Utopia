@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "utopia:block/white_beton_block",
-    "top": "utopia:block/white_beton_block",
-    "side": "utopia:block/white_beton_block"
-  }
-}

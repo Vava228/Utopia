@@ -116,6 +116,15 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
+<<<<<<< HEAD
+=======
+    implementation 'org.jetbrains:annotations:24.0.0'
+
+    // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
+    // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
+    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+>>>>>>> 9c34a6392aec7f50b93237f5e339e3d36dadd9cd
 
     minecraft ('net.minecraftforge:forge:1.16.5-36.2.34')
 
