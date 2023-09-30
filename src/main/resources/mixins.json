@@ -3,7 +3,7 @@
   "package": "com.UtopiaMixin.mixins",
   "compatibilityLevel": "JAVA_8",
   "client": [
-    "MixinWidget"
+
   ],
   "injectors": {
     "defaultRequire": 1
