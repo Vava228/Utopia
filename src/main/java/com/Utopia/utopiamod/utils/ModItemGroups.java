@@ -17,4 +17,5 @@ public class ModItemGroups {
     }
 
     public static ItemGroup MOD_MATERIALS_TAB = createGroup("mod_materials_tab", ModItems.CITRINE);
+    public static ItemGroup MOD_GUNS_TAB = createGroup("mod_guns_tab", ModItems.TESTGUN);
 }
